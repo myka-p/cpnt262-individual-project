@@ -1,13 +1,65 @@
-article {
-  max-width: 40ch;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  /* display defaults */
+  margin: auto;
+  padding: 4em;
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row; 
+
+  background-color: #eee; 
+  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+  
+  /* alignments */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 img {
   display: block;
   width: 100%;
+  
 }
 
-body {
+section {
   display: flex;
   flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+
+  /* gives spaces between the cards during full desktop view */
+  gap: 70px;
 }
+
+article {
+  max-width: 40ch;
+
+  padding: 4em;
+
+  background-color: #fff; 
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+
+  /* cursor and behaviour of the card */
+  cursor: pointer;
+  transition: 0.2s;
+
+  /* this size is enough not to have overflow and horizontal scrolls */
+  width: 33em;
+}
+
+li {
+  font-size: 20px;
+}
+

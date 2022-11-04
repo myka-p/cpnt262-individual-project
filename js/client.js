@@ -18,7 +18,7 @@ const fetchData = async function(endpoint) {
 
     const handlePost = function(data) {
       output += `
-       <article>
+       <article class="card">
          <h2>${data.title}</h2>
          <img src="${data.image}" alt"Picture of ${data.title}">
          <ul>
