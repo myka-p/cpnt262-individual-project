@@ -6,3 +6,8 @@ img {
   display: block;
   width: 100%;
 }
+
+body {
+  display: flex;
+  flex-direction: row;
+}
