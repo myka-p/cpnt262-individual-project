@@ -27,7 +27,7 @@ const fetchData = async function(endpoint) {
            <li>Date: ${data.release_date}</li>
            <li>Description: ${data.description}</li>
            <li>Rotten Tomato Score: ${data.rt_score}</li>
-           <a href="${data.url}">Complete information</a>
+           <li><a href="${data.url}">Complete Information</a></li>
         </ul>
        </article>
        `
