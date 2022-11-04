@@ -10,7 +10,7 @@ html {
 
 body {
   /* display defaults */
-  margin: auto;
+  /* margin: auto; */
   padding: 4em;
   display: flex;
   flex-wrap: wrap; 
@@ -39,11 +39,10 @@ section {
 
   /* gives spaces between the cards during full desktop view */
   gap: 70px;
+  min-width: 40ch;
 }
 
 article {
-  max-width: 40ch;
-
   padding: 4em;
 
   background-color: #fff; 
@@ -60,6 +59,7 @@ article {
 }
 
 li {
-  font-size: 20px;
+  font-size: 15px;
+  line-height: 1.5em;
 }
 
