@@ -46,3 +46,6 @@ I used a higher order function - `.forEach()`. It can be found on `style.css` > 
 ```
 
 ## Attributions
+dailies-f22  
+- foreach (https://github.com/sait-wbdv/dailies-f22/blob/main/2022-10-31-exceptions-foreach/08-finished-json-placeholder-foreach/js/client.js)
+- Error handling (https://github.com/sait-wbdv/dailies-f22/blob/main/2022-10-31-exceptions-foreach/05-starter-json-placeholder-foreach/js/client.js)
