@@ -1,8 +1,3 @@
-const randomInteger = function(max) {
-  const randomInteger = Math.floor(Math.random() * max);
-  return randomInteger;
-}
-
 const section = document.querySelector('.data');
 
 const fetchData = async function(endpoint) {
@@ -17,27 +12,6 @@ const fetchData = async function(endpoint) {
     if (!response.ok) {
       throw new Error(`${response.status}: ${response.statusText}`);
     }
-
-    // Use the data
-    //loop this for the assignment
-    // anime = data[randomInteger(data.length)];
-
-    // const body = document.querySelector('body');
-  
-    // output = `
-    //   <article>
-    //     <h2>${anime.title}</h2>
-    //     <img src="${anime.image}" alt"Picture of ${anime.title}">
-    //     <ul>
-    //       <li>Director: ${anime.director}</li>
-    //       <li>Producer: ${anime.producer}</li>
-    //       <li>Date: ${anime.release_date}</li>
-    //       <li>Description: ${anime.description}</li>
-    //       <li>Rotten Tomato Score: ${anime.rt_score}</li>
-    //    </ul>
-    //   </article>
-    //   `
-    // body.innerHTML = output;
 
     // accumulator
     let output = '';
@@ -71,11 +45,7 @@ const fetchData = async function(endpoint) {
     console.log('Cause: ', error.cause);
 
     document.querySelector('body').innerHTML = `<h1>There was an error</h1>`
-  }
-  
-
-
-  
+  } 
 }
 
 // Invoke our function
