@@ -6,7 +6,7 @@ author: Myka Peligrino
 **API Link:** https://ghibliapi.herokuapp.com/
 
 ## Above and Beyond   
-I used a higher order function - `.forEach()`. It can be found on `style.css` > `line `.
+I used a higher order function - `.forEach()`. It can be found on `style.css` > `line 37`.
 
 ## Sample JS Object served in the API  
 ```
