@@ -1,65 +1,105 @@
 * {
+  /* reset default */
   margin: 0;
   padding: 0;
 }
 
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
 body {
-  /* display defaults */
-  /* margin: auto; */
-  padding: 4em;
-  display: flex;
-  flex-wrap: wrap; 
-  flex-direction: row; 
-
+  /* body styles */
   background-color: #eee; 
   font-family:Verdana, Geneva, Tahoma, sans-serif; 
   
-  /* alignments */
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
-}
+  min-width: 65ch;
+}  
 
-img {
-  display: block;
-  width: 100%;
+header {
+  /* header styles */
+  padding: 0.8em 0;
+  text-align: center;
   
+  font-weight: 900;
+  font-size: 30px;
+
+  color: #eee;
+  background-color: #39547C;
 }
 
-section {
+main {
+  /* this is the container for the div area */
+  padding: 1.5em 10em;
+}
+
+div {
+  /* this is the container for all the cards */
+  /* alignment of all cards within the */
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
   justify-content: center;
 
-  /* gives spaces between the cards during full desktop view */
+  /* gives spaces between the cards */
   gap: 70px;
-  min-width: 40ch;
+ 
 }
 
 article {
-  padding: 4em;
+  /* this is the card */
+  padding: 2em;
 
   background-color: #fff; 
-  border-radius: 0.4rem;
+  border-radius: 0.7rem;
   overflow: hidden;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
 
-  /* cursor and behaviour of the card */
-  cursor: pointer;
-  transition: 0.2s;
-
-  /* this size is enough not to have overflow and horizontal scrolls */
-  width: 33em;
+  width: 420px; 
 }
 
-li {
+figure {
+  /* this is the container for the img */
+  padding: 2em;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h2 {
+  font-size: 20px;
+  color: #39547C;
+}
+
+li, a {
+  /* list and link font styles */
   font-size: 15px;
   line-height: 1.5em;
+  list-style: none;
 }
+
+ul {
+  /* this gives space between the lists and the link */
+  padding-bottom: 1em;
+}
+
+/* link styles */
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+
+  color: #a06468;
+}
+
+a:visited {
+  color: #4d8764;
+}
+
+a:hover {
+  background-color: #fffbc8;
+}
+
+a:active {
+  color: #2e4744;
+}
+
 
